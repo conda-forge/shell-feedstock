@@ -1,5 +1,5 @@
 context:
-  version: "0.1.0"
+  version: "0.2.0"
 
 package:
   name: shell
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/prefix-dev/shell/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 0eb58c974361144279e966b072bc69ab0b885090ca63a60bccab11c29ac44ba9
+  sha256: d0847b6a805163f5a571c14ca576f27f770c41340a9f343e1235bab1677ebce3
 
 build:
-  number: 1
+  number: 0
   script: |
     set -ex
     cd crates/shell
@@ -26,7 +26,7 @@ requirements:
 
 tests:
   - script:
-    - shell --help
+      - shell --help
 
 about:
   homepage: https://github.com/prefix-dev/shell
