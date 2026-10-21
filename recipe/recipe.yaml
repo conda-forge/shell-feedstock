@@ -1,5 +1,5 @@
 context:
-  version: "0.2.0"
+  version: "0.3.0"
 
 package:
   name: shell
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/prefix-dev/shell/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: d0847b6a805163f5a571c14ca576f27f770c41340a9f343e1235bab1677ebce3
+  sha256: 38e22fa64a23d3f94e9fcc8fec29995d09005fd06da9cbb65a6bbb2f42bda37f
 
 build:
   number: 0
@@ -32,7 +32,7 @@ about:
   homepage: https://github.com/prefix-dev/shell
   license: MIT
   license_file:
-    - THIRDPARTY.yml
+    - crates/shell/THIRDPARTY.yml
     - LICENSE.txt
   summary: The ultimate cross-platform, bash-like shell
 
